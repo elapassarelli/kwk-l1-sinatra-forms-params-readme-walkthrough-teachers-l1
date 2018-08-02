@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <meta charset="UTF-8">
+    <title>Music Quiz</title>
+      
+  </head>
+
+  <body bgcolor="pink">
+    <h1 class= border> <center>Enhance your listening.</center></h1>
+    <h2 class= example> Are you bored of the same songs and playlists? Need something more current to spice up your jams?</h2>
+    <h2 class= example2> Then take this quiz to figure out which new artist you need to add.</h2>
+    <h3 class=example3> Disclaimer: this quiz is sponsored by Spotify.</h3>
+    <img src="https://www.billboard.com/files/styles/article_main_image/public/media/the-hunna-press-2016-billboard-1548.jpg">
+    <h6> The Hunna, circa 2016</h6>
+
+    <!-- Insert Your Form Below -->
+          <form method ="POST" action = "/results">
+            <p>What is your name? <input type="text" name="username"></p>
+            <p>What is a word to describe yourself? <input type="text" name="adjective"></p>
+          What is your favorite music genre? <br>
+          <input type="radio" name="typeOfMusic" value="alternative" checked> Alternative Rock<br>
+          <input type="radio" name="typeOfMusic" value="pop"> Pop<br>
+          <input type="radio" name="typeOfMusic" value="rap"> Rap<br>
+          <input type="radio" name="typeOfMusic" value="country">Country<br>
+          <input type="radio" name="typeOfMusic" value="electronic">Electronic<br>
+          <input type="radio" name="typeOfMusic" value="rock">Rock<br>
+          <input type="submit" value="Submit">
+        </form>
+
+  </body>
+</html>

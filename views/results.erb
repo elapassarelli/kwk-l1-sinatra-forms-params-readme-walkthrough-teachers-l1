@@ -1,0 +1,26 @@
+<html> 
+
+</head><link rel="stylesheet" type="text/css" href="stylesheets/style.css"></head>
+
+<body bgcolor="#ADD8E6">
+  <h1><a href="/">HOME</a></h1>
+<h1><br><center>Hello <%=@adjective%> <%=@name%>!</center></h1>
+<h2> We've got some hot new music for you to check out. Based on your preferences, we think you should listen to: 
+ <p> <% if @genre.to_s == "alternative" %>
+    Tash Sultana. (Song Reccomendation: Jungle) <br><h4> The 22-year old Melbourne native can play more than 10 instruments (guitar, sax, trumpet, flute, etc.) and has taken her mesmerizing one-man show from busking street corners to sold-out North American clubs and late-night talk shows last year (see above). On the studio side, a pair of tracks from her heady 2016 Notion EP have over 25 million Spotify spins and our fingers are crossed for a full-length release in the near future. </h4>
+  <% elsif @genre.to_s == "pop" %>
+     Madison Beer. (Song Reccomendation: Dead) <br><h4>Considering she’s an 18-year-old whose nascent career traces back to a Justin Bieber tweet, you can be forgiven for sleeping on Madison Beer -- but 2018 should be the year that ends. Beer is a versatile, strong vocalist who’s as at home singing Shawn Mendes-esque strummers (“Say It To My Face”) as she is delivering seductive, gooey late night R&B numbers (check out the irresistible “Dead,” which asks the question cynical romantics have been pondering for centuries -- “if you say you can’t live without me, then why aren’t you dead yet?”).</h4>
+  <% elsif @genre.to_s == "rap" %>
+      KAYTRANADA. (Song Reccomendation: YOU'RE THE ONE) <br><h4> Louis Kevin Celestin, known by his stage name Kaytranada, is a Haitian-Canadian DJ and record producer. Celestin began his career under the alias Kaytradamus in 2010. He is part of the hip hop duo The Celestics.</h4>
+    <% elsif @genre.to_s == "country" %>
+      Jordan Reynolds. (Song Reccomendation: Honesty) <br><h4>Rising songwriter Jordan Reynolds, originally hailing from St. Louis, has quickly made a name for himself in Nashville. Jordan's songwriting is a fusion of classic country and soulful pop. His songs have been cut by Keith Urban, Lady Antebellum, Thomas Rhett, Lauren Alaina, Brett Eldredge, and Dan + Shay.</h4>
+   <% elsif @genre.to_s == "electronic" %>
+      Mura Masa. (Song Reccomendation: Flying Lotus.) <br><h4>Alex Crossan, also known by the stage name Mura Masa is a Guernsey-born electronic music producer, songwriter and multi-instrumentalist. His stage name is taken from Japanese sword-smith Muramasa Sengo.</h4>
+  <% else  %>
+      The War on Drugs. (Song Reccomendation: Red Eyes) <br><h4>The War on Drugs is an American indie rock band from Philadelphia, Pennsylvania, formed in 2005. The band consists of Adam Granduciel (lyrics, vocals, guitar), David Hartley (bass), Robbie Bennett (keyboards), Charlie Hall (drums), Jon Natchez (saxophone, keyboards) and Anthony LaMarca (guitar).</h4>
+  <% end %>
+  </p>
+  <p>
+</p>
+
+</body> 
